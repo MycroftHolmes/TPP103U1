@@ -8,6 +8,7 @@
 <link href="mycss.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.3.0.min.js" type="text/javascript"></script>
+<script src="TPP103U1app.js" type="text/javascript"></script>
 </head> 
 <body> 
 
@@ -73,67 +74,6 @@ a:active {
 	var g4score = 0;
 	var g4highscore = 0;
 	var g4counter = 0;
-	
-	var pos = new Array ();
-	pos [0] = "verb";
-	pos [1] = "noun";
-	pos [2] = "verb";
-	pos [3] = "noun";
-	pos [4] = "noun";
-	pos [5] = "verb/noun";
-	pos [6] = "verb";
-	pos [7] = "verb";
-	pos [8] = "verb";
-	pos [9] = "verb";
-	pos [10] = "adjective";
-	pos [11] = "verb";
-	pos [12] = "noun";
-	pos [13] = "verb";
-	pos [14] = "noun";
-	pos [15] = "verb";
-	pos [16] = "verb";
-	pos [17] = "verb";
-	pos [18] = "noun";
-	pos [19] = "verb";
-	pos [20] = "noun";
-	pos [21] = "unknown";
-	
-	var def = new Array ();
-	def [0] = "to save someone or something from danger.";
-	def [1] = "something said or done as a result of something";
-	
-	var xtra = new Array ();
-	xtra [0] = "Rescue can also be used as an adjective: 'I'm part of the rescue team.' It can even be a noun: 'Are you going to help with the rescue?'";
-	xtra [1] = "Related Words: respond (verb)";
-	
-	var newWord = new Array ();
-	newWord [0] = "apple";
-	newWord [1] = "bed";
-	newWord [2] = "cat";
-    newWord [3] = "door";
-	newWord [4] = "egg";
-	newWord [5] = "father";
-	newWord [6] = "girl";
-	newWord [7] = "home";
-	newWord [8] = "ink";
-	newWord [9] = "juice";
-	newWord [10] = "kite";
-	newWord [11] = "leg";
-	newWord [12] = "mother";
-	newWord [13] = "name";
-	newWord [14] = "office";
-	newWord [15] = "paper";
-	newWord [16] = "quiz";
-	newWord [17] = "rabbit";
-	newWord [18] = "sister";
-	newWord [19] = "table";
-	newWord [20] = "umbrella";
-	newWord [21] = "van";
-	newWord [22] = "watch";
-	newWord [23] = "x-ray";
-	newWord [24] = "year";
-	newWord [25] = "zoo";
-
 
 var Hint = new Array ();
 	Hint [0] = "The fireman <em> rescued</em> the man from the fire."; //Rescue1
@@ -280,12 +220,65 @@ function please()
 	document.getElementById("pos18").innerHTML = pos[18];
 	document.getElementById("pos19").innerHTML = pos[19];
 	document.getElementById("pos20").innerHTML = pos[20];
+	document.getElementById("pos21").innerHTML = pos[21];
+	document.getElementById("pos22").innerHTML = pos[22];
+	document.getElementById("pos23").innerHTML = pos[23];
+	document.getElementById("pos24").innerHTML = pos[24];
+	document.getElementById("pos25").innerHTML = pos[25];
 	
 	document.getElementById("def0").innerHTML = def[0];
 	document.getElementById("def1").innerHTML = def[1];
+	document.getElementById("def2").innerHTML = def[2];
+	document.getElementById("def3").innerHTML = def[3];
+	document.getElementById("def4").innerHTML = def[4];
+	document.getElementById("def5").innerHTML = def[5];
+	document.getElementById("def6").innerHTML = def[6];
+	document.getElementById("def7").innerHTML = def[7];
+	document.getElementById("def8").innerHTML = def[8];
+	document.getElementById("def9").innerHTML = def[9];
+	document.getElementById("def10").innerHTML = def[10];
+	document.getElementById("def11").innerHTML = def[11];
+	document.getElementById("def12").innerHTML = def[12];
+	document.getElementById("def13").innerHTML = def[13];
+	document.getElementById("def14").innerHTML = def[14];
+	document.getElementById("def15").innerHTML = def[15];
+	document.getElementById("def16").innerHTML = def[16];
+	document.getElementById("def17").innerHTML = def[17];
+	document.getElementById("def18").innerHTML = def[18];
+	document.getElementById("def19").innerHTML = def[19];
+	document.getElementById("def20").innerHTML = def[20];
+	document.getElementById("def21").innerHTML = def[21];
+	document.getElementById("def22").innerHTML = def[22];
+	document.getElementById("def23").innerHTML = def[23];
+	document.getElementById("def24").innerHTML = def[24];
+	document.getElementById("def25").innerHTML = def[25];
 	
 	document.getElementById("xtra0").innerHTML = xtra[0];
 	document.getElementById("xtra1").innerHTML = xtra[1];
+	document.getElementById("xtra2").innerHTML = xtra[2];
+	document.getElementById("xtra3").innerHTML = xtra[3];
+	document.getElementById("xtra4").innerHTML = xtra[4];
+	document.getElementById("xtra5").innerHTML = xtra[5];
+	document.getElementById("xtra6").innerHTML = xtra[6];
+	document.getElementById("xtra7").innerHTML = xtra[7];
+	document.getElementById("xtra8").innerHTML = xtra[8];
+	document.getElementById("xtra9").innerHTML = xtra[9];
+	document.getElementById("xtra10").innerHTML = xtra[10];
+	document.getElementById("xtra11").innerHTML = xtra[11];
+	document.getElementById("xtra12").innerHTML = xtra[12];
+	document.getElementById("xtra13").innerHTML = xtra[13];
+	document.getElementById("xtra14").innerHTML = xtra[14];
+	document.getElementById("xtra15").innerHTML = xtra[15];
+	document.getElementById("xtra16").innerHTML = xtra[16];
+	document.getElementById("xtra17").innerHTML = xtra[17];
+	document.getElementById("xtra18").innerHTML = xtra[18];
+	document.getElementById("xtra19").innerHTML = xtra[19];
+	document.getElementById("xtra20").innerHTML = xtra[20];
+	document.getElementById("xtra21").innerHTML = xtra[21];
+	document.getElementById("xtra22").innerHTML = xtra[22];
+	document.getElementById("xtra23").innerHTML = xtra[23];
+	document.getElementById("xtra24").innerHTML = xtra[24];
+	document.getElementById("xtra25").innerHTML = xtra[25];
 
 	document.getElementById("lex0a").innerHTML = newWord[0];
 	document.getElementById("lex1a").innerHTML = newWord[1];
@@ -314,69 +307,84 @@ function please()
 	document.getElementById("lex24a").innerHTML = newWord[24];
 	document.getElementById("lex25a").innerHTML = newWord[25];
 	
-	document.getElementById("hint0").innerHTML = Hint[0];
-	document.getElementById("hint0a").innerHTML = Hint[1];
-	document.getElementById("hint0b").innerHTML = Hint[2];
-	document.getElementById("hint1").innerHTML = Hint[3];
-	document.getElementById("hint1a").innerHTML = Hint[4];
-	document.getElementById("hint1b").innerHTML = Hint[5];	
-	document.getElementById("hint2").innerHTML = Hint[6];
-	document.getElementById("hint2a").innerHTML = Hint[7];
-	document.getElementById("hint2b").innerHTML = Hint[8];
-	document.getElementById("hint3").innerHTML = Hint[9];
-	document.getElementById("hint3a").innerHTML = Hint[10];
-	document.getElementById("hint3b").innerHTML = Hint[11];
-	document.getElementById("hint4").innerHTML = Hint[12];
-	document.getElementById("hint4a").innerHTML = Hint[13];
-	document.getElementById("hint4b").innerHTML = Hint[14];
-	document.getElementById("hint5").innerHTML = Hint[15];
-	document.getElementById("hint5a").innerHTML = Hint[16];
-	document.getElementById("hint5b").innerHTML = Hint[17];
-	document.getElementById("hint6").innerHTML = Hint[18];
-	document.getElementById("hint6a").innerHTML = Hint[19];
-	document.getElementById("hint6b").innerHTML = Hint[20];
-	document.getElementById("hint7").innerHTML = Hint[21];
-	document.getElementById("hint7a").innerHTML = Hint[22];
-	document.getElementById("hint7b").innerHTML = Hint[23];
-	document.getElementById("hint8").innerHTML = Hint[24];
-	document.getElementById("hint8a").innerHTML = Hint[25];
-	document.getElementById("hint8b").innerHTML = Hint[26];
-	document.getElementById("hint9").innerHTML = Hint[27];
-	document.getElementById("hint9a").innerHTML = Hint[28];
-	document.getElementById("hint9b").innerHTML = Hint[29];
-	document.getElementById("hint10").innerHTML = Hint[30];
-	document.getElementById("hint10a").innerHTML = Hint[31];
-	document.getElementById("hint10b").innerHTML = Hint[32];
-	document.getElementById("hint11").innerHTML = Hint[33];
-	document.getElementById("hint11a").innerHTML = Hint[34];
-	document.getElementById("hint11b").innerHTML = Hint[35];
-	document.getElementById("hint12").innerHTML = Hint[36];
-	document.getElementById("hint12a").innerHTML = Hint[37];
-	document.getElementById("hint12b").innerHTML = Hint[38];
-	document.getElementById("hint13").innerHTML = Hint[39];
-	document.getElementById("hint13a").innerHTML = Hint[40];
-	document.getElementById("hint13b").innerHTML = Hint[41];
-	document.getElementById("hint14").innerHTML = Hint[42];
-	document.getElementById("hint14a").innerHTML = Hint[43];
-	document.getElementById("hint14b").innerHTML = Hint[44];
-	document.getElementById("hint15").innerHTML = Hint[45];
-	document.getElementById("hint15a").innerHTML = Hint[46];
-	document.getElementById("hint15b").innerHTML = Hint[47];
-	document.getElementById("hint16").innerHTML = Hint[48];
-	document.getElementById("hint16a").innerHTML = Hint[49];
-	document.getElementById("hint16b").innerHTML = Hint[50];
-	document.getElementById("hint17").innerHTML = Hint[51];
-	document.getElementById("hint17a").innerHTML = Hint[52];
-	document.getElementById("hint17b").innerHTML = Hint[53];
-	document.getElementById("hint18").innerHTML = Hint[54];
-	document.getElementById("hint18a").innerHTML = Hint[55];
-	document.getElementById("hint18b").innerHTML = Hint[56];
-	document.getElementById("hint19").innerHTML = Hint[57];
-	document.getElementById("hint19a").innerHTML = Hint[58];
-	document.getElementById("hint19b").innerHTML = Hint[59];
-	document.getElementById("hint20").innerHTML = Hint[60];
-	document.getElementById("hint20a").innerHTML = Hint[61];
-	document.getElementById("hint20b").innerHTML = Hint[62];
+	document.getElementById("hint0").innerHTML = sent[0];
+	//document.getElementById("hint0a").innerHTML = Hint[1];
+	document.getElementById("hint0b").innerHTML = arabic[0];
+	document.getElementById("hint1").innerHTML = sent[1];
+	//document.getElementById("hint1a").innerHTML = Hint[4];
+	document.getElementById("hint1b").innerHTML = arabic[1];	
+	document.getElementById("hint2").innerHTML = sent[2];
+	//document.getElementById("hint2a").innerHTML = Hint[7];
+	document.getElementById("hint2b").innerHTML = arabic[2];
+	document.getElementById("hint3").innerHTML = sent[3];
+	//document.getElementById("hint3a").innerHTML = Hint[10];
+	document.getElementById("hint3b").innerHTML = arabic[3];
+	document.getElementById("hint4").innerHTML = sent[4];
+	//document.getElementById("hint4a").innerHTML = Hint[13];
+	document.getElementById("hint4b").innerHTML = arabic[4];
+	document.getElementById("hint5").innerHTML = sent[5];
+	//document.getElementById("hint5a").innerHTML = Hint[16];
+	document.getElementById("hint5b").innerHTML = arabic[5];
+	document.getElementById("hint6").innerHTML = sent[6];
+	//document.getElementById("hint6a").innerHTML = Hint[19];
+	document.getElementById("hint6b").innerHTML = arabic[6];
+	document.getElementById("hint7").innerHTML = sent[7];
+	//document.getElementById("hint7a").innerHTML = Hint[22];
+	document.getElementById("hint7b").innerHTML = arabic[7];
+	document.getElementById("hint8").innerHTML = sent[8];
+	//document.getElementById("hint8a").innerHTML = Hint[25];
+	document.getElementById("hint8b").innerHTML = arabic[8];
+	document.getElementById("hint9").innerHTML = sent[9];
+	//document.getElementById("hint9a").innerHTML = Hint[28];
+	document.getElementById("hint9b").innerHTML = arabic[9];
+	document.getElementById("hint10").innerHTML = sent[10];
+	//document.getElementById("hint10a").innerHTML = Hint[31];
+	document.getElementById("hint10b").innerHTML = arabic[10];
+	document.getElementById("hint11").innerHTML = sent[11];
+	//document.getElementById("hint11a").innerHTML = Hint[34];
+	document.getElementById("hint11b").innerHTML = arabic[11];
+	document.getElementById("hint12").innerHTML = sent[12];
+	//document.getElementById("hint12a").innerHTML = Hint[37];
+	document.getElementById("hint12b").innerHTML = arabic[12];
+	document.getElementById("hint13").innerHTML = sent[13];
+	//document.getElementById("hint13a").innerHTML = Hint[40];
+	document.getElementById("hint13b").innerHTML = arabic[13];
+	document.getElementById("hint14").innerHTML = sent[14];
+	//document.getElementById("hint14a").innerHTML = Hint[43];
+	document.getElementById("hint14b").innerHTML = arabic[14];
+	document.getElementById("hint15").innerHTML = sent[15];
+	//document.getElementById("hint15a").innerHTML = Hint[46];
+	document.getElementById("hint15b").innerHTML = arabic[15];
+	document.getElementById("hint16").innerHTML = sent[16];
+	//document.getElementById("hint16a").innerHTML = Hint[49];
+	document.getElementById("hint16b").innerHTML = arabic[16];
+	document.getElementById("hint17").innerHTML = sent[17];
+	//document.getElementById("hint17a").innerHTML = Hint[52];
+	document.getElementById("hint17b").innerHTML = arabic[17];
+	document.getElementById("hint18").innerHTML = sent[18];
+	//document.getElementById("hint18a").innerHTML = Hint[55];
+	document.getElementById("hint18b").innerHTML = arabic[18];
+	document.getElementById("hint19").innerHTML = sent[19];
+	//document.getElementById("hint19a").innerHTML = Hint[58];
+	document.getElementById("hint19b").innerHTML = arabic[19];
+	document.getElementById("hint20").innerHTML = sent[20];
+	//document.getElementById("hint20a").innerHTML = Hint[61];
+	document.getElementById("hint20b").innerHTML = arabic[20];
+	document.getElementById("hint21").innerHTML = sent[21];
+	//document.getElementById("hint21a").innerHTML = Hint[61];
+	document.getElementById("hint21b").innerHTML = arabic[21];
+	document.getElementById("hint22").innerHTML = sent[22];
+	//document.getElementById("hint22a").innerHTML = Hint[61];
+	document.getElementById("hint22b").innerHTML = arabic[22];
+	document.getElementById("hint23").innerHTML = sent[23];
+	//document.getElementById("hint21a").innerHTML = Hint[61];
+	document.getElementById("hint23b").innerHTML = arabic[23];
+	document.getElementById("hint24").innerHTML = sent[24];
+	//document.getElementById("hint24a").innerHTML = Hint[61];
+	document.getElementById("hint24b").innerHTML = arabic[24];
+	document.getElementById("hint25").innerHTML = sent[25];
+	//document.getElementById("hint25a").innerHTML = Hint[61];
+	document.getElementById("hint25b").innerHTML = arabic[25];
 	
 	}
 </script>
@@ -643,7 +651,7 @@ for (var i = 0; i < wordLength; i++) {
 function G3hint1()
 	{
 	
-	document.getElementById("G3H1").innerHTML = Hint[g3word*3];
+	document.getElementById("G3H1").innerHTML = sent[g3word];
 	document.getElementById("G3H1").style.textAlign = "center";
 	g3counter++;
 	
@@ -655,7 +663,7 @@ function G3hint1()
 function G3hint2()
 	{
 	
-	document.getElementById("G3H2").innerHTML = Hint[g3word*3+1];
+	document.getElementById("G3H2").innerHTML = def[g3word];
 	g3counter++;
 	
 	}
@@ -666,7 +674,7 @@ function G3hint2()
 function G3hint3()
 	{
 	
-	document.getElementById("G3H3").innerHTML = Hint[g3word*3+2];
+	document.getElementById("G3H3").innerHTML = arabic[g3word];
 	g3counter++;
 	
 	}
@@ -857,8 +865,8 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 
       </div>
  	</div>
-	<div data-role="footer">
-		<span class="ui-bar"><span class="collegename">COLLEGE OF THE NORTH ATLANTIC - QATAR</span></span>
+	<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="a">
+		<span class="collegename">COLLEGE OF THE NORTH ATLANTIC - QATAR</span>
 	</div>
 </div>
 
@@ -951,7 +959,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div>
@@ -1025,7 +1033,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1094,7 +1102,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1163,7 +1171,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1232,7 +1240,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1301,7 +1309,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1370,7 +1378,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1439,7 +1447,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1508,7 +1516,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1577,7 +1585,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1646,7 +1654,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1715,7 +1723,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1784,7 +1792,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1853,7 +1861,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1922,7 +1930,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -1991,7 +1999,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2060,7 +2068,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2129,7 +2137,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2198,7 +2206,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2267,7 +2275,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page2" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2336,7 +2344,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page23" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2406,7 +2414,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page23" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2476,7 +2484,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page24" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2546,7 +2554,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page25" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2616,7 +2624,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page26" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2686,7 +2694,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	
   <br/>
   <br/>
-<div data-role="footer" class="ui-bar" data-theme="b" >
+<div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b" >
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page27" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-role="button">Back</a>
@@ -2719,7 +2727,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
     </div>
     <br/>
   </div>
-  <div data-role="footer" data-theme="b">
+  <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b">
     <h4><a href="#page2">back</a></h4>
   </div>
 </div>
@@ -2736,9 +2744,10 @@ else if (a == newWord[vowelword] && g4counter == 2) {
         <li class="listdivider" data-role="divider" data-theme="d">One-Player Games</li>
        <li><a href="#page55">Scrambler</a></li>
        <li><a href="#page57">Vowel Trouble</a></li>
+       <li><a href="#page59">PictureMatch</a></li>
    	</ul>
   </div>
-  <div data-role="footer">
+  <div data-role="footer" class="ui-bar" data-position="fixed">
     <div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a></div>
   </div>
 </div>
@@ -2762,7 +2771,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 	  <li><a href="#page52" onClick="randomStart();randomStart2();">Start Game</a></li>
    	</ul>
   </div>
-  <div data-role="footer">
+  <div data-role="footer" class="ui-bar" data-position="fixed">
     <div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div>
@@ -2892,7 +2901,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
     <button onClick="G1input2()" data-inline=true>Synonym</button>
     </div>
   
-  <div data-role="footer">
+  <div data-role="footer" class="ui-bar" data-position="fixed">
     <h4><a href="#page" onClick="G1reset();">Main Menu</a></h4>
   </div>
 </div>
@@ -2916,7 +2925,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 	  <li><a href="#page52" onClick="randomStart();">Start Game</a></li>
    	</ul>
   </div>
-  <div data-role="footer">
+  <div data-role="footer" class="ui-bar" data-position="fixed">
     <h4><a href="#page2">Main Menu</a></h4>
   </div>
 </div>
@@ -2930,7 +2939,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 	  <li><a href="#page52" onClick="randomStart();">Start Game</a></li>
    	</ul>
   </div>
-  <div data-role="footer">
+  <div data-role="footer" class="ui-bar" data-position="fixed">
     <h4><a href="#page2">Main Menu</a></h4>
   </div>
 </div>
@@ -2954,8 +2963,20 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 	  <li><a href="#page56" onClick="randomStart();">Start Game</a></li>
    	</ul>
   </div>
-  <div data-role="footer">
-    <h4><a href="#page2">Main Menu</a></h4>
+  <div data-role="footer" class="ui-bar" data-position="fixed">
+    <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
   </div>
 </div>
 
@@ -3007,7 +3028,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
       </div>
     </div>
       
-      <div data-role="footer" data-theme="a">
+      <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="a">
 	<div class="ui-grid-b">
     	<div class="ui-block-a">
         	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b" onClick="G3scoring()">Back</a>
@@ -3036,16 +3057,28 @@ else if (a == newWord[vowelword] && g4counter == 2) {
    	<p align="justify">&bull;&nbsp;&nbsp;Vowel Trouble is a one-player game.<br/><br/>
       &bull;&nbsp;&nbsp;The vowels of each word are missing.<br/><br/>
       &bull;&nbsp;&nbsp;You must spell the word correctly<br/><br/>
-      &bull;&nbsp;&nbsp;You receive 10 points if you spell the word correctly<br/>      <br/>
+      &bull;&nbsp;&nbsp;You receive 10 points if you spell the word correctly without help.<br/>      <br/>
       &bull;&nbsp;&nbsp; If you need help, touch the help button to see the word for 3 seconds<br/><br/>
-      &bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp; You receive only 5 points if you receive help<br/><br/>
+      &bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp; You receive fewer points each time you get help.<br/><br/>
     </p>
   	<ul data-role="listview" data-theme="b">
 	  <li><a href="#page58" onClick="randomStart();">Start Game</a></li>
    	</ul>
   </div>
-  <div data-role="footer">
-    <h4><a href="#page2">Main Menu</a></h4>
+  <div data-role="footer" class="ui-bar" data-position="fixed">
+    <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
   </div>
 </div>
 
@@ -3058,16 +3091,15 @@ else if (a == newWord[vowelword] && g4counter == 2) {
         	<span class="highscore">High Score</span>
             <br/>
             <span class="highscore"><span id="hiscoreg4" class="highscore">0</span></span> <br/> 
-            <br/>
         </div>     
     	<div>
           <div align="center">
-            <table width="166" border="1" cellpadding="0">
+            <table width="150" border="1" cellpadding="0">
               <tr>
-                <th width="156" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
+                <th width="150" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
               </tr>
               <tr>
-                <th height="62" bgcolor="#FFFFFF" id="G4score" style="font-size: xx-large; color: #000;" scope="col">0</th>
+                <th height="45" bgcolor="#FFFFFF" id="G4score" style="font-size: xx-large; color: #000;" scope="col">0</th>
               </tr>
             </table>
           </div>
@@ -3077,7 +3109,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
     <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
     	     <button onClick="vowelless();" data-theme="b" data-inline=true>new word</button>
-    	     <table width="225" height="95" border="1" cellpadding="0" data-inline=true>
+    	     <table width="225" height="65" border="1" cellpadding="0" data-inline=true>
     	       <tr>
     	         <th width="225" bgcolor="#FFFFFF" id="novowels" style="font-size: xx-large; color: #000;" scope="col"></th>
    	           </tr>
@@ -3091,7 +3123,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
        <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
     	     <button onClick="vowelhelp();" data-theme="b" data-inline=true>help</button>
-    	     <table width="225" height="95" border="1" cellpadding="0" data-inline=true>
+    	     <table width="225" height="65" border="1" cellpadding="0" data-inline=true>
     	       <tr>
     	         <th width="225" bgcolor="#FFFFFF" id="vowelled" style="font-size: xx-large; color: #000;" scope="col"></th>
    	           </tr>
@@ -3100,7 +3132,115 @@ else if (a == newWord[vowelword] && g4counter == 2) {
     </div>
     
    
-     <div data-role="footer">
-    <div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a></div>
+     <div data-role="footer" class="ui-bar" data-position="fixed">
+     <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
+  </div>
+</div>
+
+<div data-role="page" id="page59" data-theme="d">
+  <div data-role="header">
+    <h1>Picture Match</h1>
+  </div>
+  <div data-role="content">
+    <p align="center">&nbsp;&nbsp;Rules:
+    </p>
+   	<p align="justify">&bull;&nbsp;&nbsp;Picture Match is a one-player game.<br/><br/>
+      &bull;&nbsp;&nbsp;Touch the word that goes with the picture.<br/><br/>
+      &bull;&nbsp;&nbsp;You receive points for correct answers.<br/><br/>
+      &bull;&nbsp;&nbsp;You lose points when you touch the wrong word.<br/>      <br/>
+    </p>
+  	<ul data-role="listview" data-theme="b">
+	  <li><a href="#page60">Start Game</a></li>
+   	</ul>
+  </div>
+  <div data-role="footer" class="ui-bar" data-position="fixed">
+    <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
+  </div>
+</div>
+
+<div id="page60" data-role="page" data-theme="a">
+<div data-role="header">
+    <h1>Picture Match</h1>
+  </div>
+<div data-role="content">
+		<div align="center">
+        	<span class="highscore2">High Score</span>
+            <br/>
+            <span><span id="hiscoreg5" class="highscore2">0</span></span> <br/> 
+        </div>     
+    	<div>
+          <div align="center">
+            <table width="150" border="1" cellpadding="0">
+              <tr>
+                <th width="150" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
+              </tr>
+              <tr>
+                <th height="45" bgcolor="#FFFFFF" id="G4score" style="font-size: xx-large; color: #000;" scope="col">0</th>
+              </tr>
+            </table>
+          </div>
+    	</div>
+    
+       
+    <div data-role="controlgroup" data-rel="horizontal">
+    	   <div align="center">
+    	     <button data-theme="b" data-inline=true>new word</button>
+    	     <table width="225" height="65" border="1" cellpadding="0" data-inline=true>
+    	       <tr>
+    	         <th width="225" bgcolor="#FFFFFF" id="g5pic" style="font-size: xx-large; color: #000;" scope="col"></th>
+   	           </tr>
+    	       </table>
+  	       </div>
+    </div>
+    
+    <div class="ui-grid-b" align="center">
+    	<div class="ui-block-a" data-role="button" data-theme="b">apple</div>
+    	<div class="ui-block-b" data-role="button" data-theme="b">mule</div>
+    	<div class="ui-block-c" data-role="button" data-theme="b">stuff</div>
+    	<div class="ui-block-a" data-role="button" data-theme="b">form</div>
+    	<div class="ui-block-b" data-role="button" data-theme="b">horse</div>
+    	<div class="ui-block-c" data-role="button" data-theme="b">chicken</div>
+    	
+    
+    </div>
+    
+     <div data-role="footer" class="ui-bar" data-position="fixed">
+     <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
   </div>
 </div>
