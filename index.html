@@ -74,6 +74,7 @@ a:active {
 	var g4score = 0;
 	var g4highscore = 0;
 	var g4counter = 0;
+	var picnumb = 0;
 
 var Hint = new Array ();
 	Hint [0] = "The fireman <em> rescued</em> the man from the fire."; //Rescue1
@@ -198,6 +199,33 @@ function please()
 	document.getElementById("lex23z").innerHTML = newWord[23];
 	document.getElementById("lex24z").innerHTML = newWord[24];
 	document.getElementById("lex25z").innerHTML = newWord[25];
+	
+	document.getElementById("g5lex0").innerHTML = newWord[0];
+	document.getElementById("g5lex1").innerHTML = newWord[1];
+	document.getElementById("g5lex2").innerHTML = newWord[2];
+	document.getElementById("g5lex3").innerHTML = newWord[3];
+	document.getElementById("g5lex4").innerHTML = newWord[4];
+	document.getElementById("g5lex5").innerHTML = newWord[5];
+	document.getElementById("g5lex6").innerHTML = newWord[6];
+	document.getElementById("g5lex7").innerHTML = newWord[7];
+	document.getElementById("g5lex8").innerHTML = newWord[8];
+	document.getElementById("g5lex9").innerHTML = newWord[9];
+	document.getElementById("g5lex10").innerHTML = newWord[10];
+	document.getElementById("g5lex11").innerHTML = newWord[11];
+	document.getElementById("g5lex12").innerHTML = newWord[12];
+	document.getElementById("g5lex13").innerHTML = newWord[13];
+	document.getElementById("g5lex14").innerHTML = newWord[14];
+	document.getElementById("g5lex15").innerHTML = newWord[15];
+	document.getElementById("g5lex16").innerHTML = newWord[16];
+	document.getElementById("g5lex17").innerHTML = newWord[17];
+	document.getElementById("g5lex18").innerHTML = newWord[18];
+	document.getElementById("g5lex19").innerHTML = newWord[19];
+	document.getElementById("g5lex20").innerHTML = newWord[20];
+	document.getElementById("g5lex21").innerHTML = newWord[21];
+	document.getElementById("g5lex22").innerHTML = newWord[22];
+	document.getElementById("g5lex23").innerHTML = newWord[23];
+	document.getElementById("g5lex24").innerHTML = newWord[24];
+	document.getElementById("g5lex25").innerHTML = newWord[25];
 	
 	document.getElementById("pos0").innerHTML = pos[0];
 	document.getElementById("pos1").innerHTML = pos[1];
@@ -828,7 +856,20 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 
 	}
 
+</script>
 
+<script>
+
+function randPic()
+	{
+
+	picnumb = Math.floor((Math.random() * newWord.length));
+	
+	document.getElementById("g5pic").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
+
+	}
+	
+</script>
 
 </script>
 
@@ -3162,7 +3203,7 @@ else if (a == newWord[vowelword] && g4counter == 2) {
       &bull;&nbsp;&nbsp;You lose points when you touch the wrong word.<br/>      <br/>
     </p>
   	<ul data-role="listview" data-theme="b">
-	  <li><a href="#page60">Start Game</a></li>
+	  <li><a href="#page60" onClick="randPic();">Start Game</a></li>
    	</ul>
   </div>
   <div data-role="footer" class="ui-bar" data-position="fixed">
@@ -3184,32 +3225,23 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 
 <div id="page60" data-role="page" data-theme="a">
 <div data-role="header">
-    <h1>Picture Match</h1>
+    <h1>High Score:&nbsp;<span id"highscoreg5">0</span></h1>
   </div>
-<div data-role="content">
-		<div align="center">
-        	<span class="highscore2">High Score</span>
-            <br/>
-            <span><span id="hiscoreg5" class="highscore2">0</span></span> <br/> 
-        </div>     
+<div data-role="content">    
     	<div>
           <div align="center">
-            <table width="150" border="1" cellpadding="0">
+            <table width="125" border="1" cellpadding="0"
               <tr>
-                <th width="150" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
-              </tr>
-              <tr>
-                <th height="45" bgcolor="#FFFFFF" id="G4score" style="font-size: xx-large; color: #000;" scope="col">0</th>
+                <th height="45" bgcolor="#FFFFFF" id="G5score" style="font-size: xx-large; color: #000;" scope="col">0</th>
               </tr>
             </table>
           </div>
     	</div>
-    
-       
+         
     <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
-    	     <button data-theme="b" data-inline=true>new word</button>
-    	     <table width="225" height="65" border="1" cellpadding="0" data-inline=true>
+    	     <button onClick="randPic()" data-theme="b" data-inline=true>new picture</button>
+    	     <table width="225" height="65" border="0" cellpadding="0" data-inline=true>
     	       <tr>
     	         <th width="225" bgcolor="#FFFFFF" id="g5pic" style="font-size: xx-large; color: #000;" scope="col"></th>
    	           </tr>
@@ -3217,23 +3249,86 @@ else if (a == newWord[vowelword] && g4counter == 2) {
   	       </div>
     </div>
     
-    <div class="ui-grid-b">
-     <div class="ui-block-a"><a href="#" data-role="button" data-theme="b">apple</a>
-     </div>
-     <div class="ui-block-b">
-       <a href="#" data-role="button" data-theme="b">bed</a><br>
-     </div>
-     <div class="ui-block-c">
-       <a href="#" data-role="button" data-theme="b">cat</a>
-     </div>
-      <div class="ui-block-a"><a href="#" data-role="button" data-theme="b">door</a>
-     </div>
-     <div class="ui-block-b">
-       <a href="#" data-role="button" data-theme="b">egg</a><br>
-     </div>
-     <div class="ui-block-c">
-       <a href="#" data-role="button" data-theme="b">father</a><br>
-     </div>
+    <div class="ui-grid-b" data-role="controlgroup">
+     	<div class="ui-block-a">
+     		<a href="#" id="g5lex0" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex1" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex2" data-role="button" data-theme="b"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a href="#" id="g5lex3" data-role="button" data-theme="b"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex4" data-role="button" data-theme="b"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex5" data-role="button" data-theme="b"></a>
+     	</div>	
+     	<div class="ui-block-a">
+     		<a href="#" id="g5lex6" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex7" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex8" data-role="button" data-theme="b"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a href="#" id="g5lex9" data-role="button" data-theme="b"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex10" data-role="button" data-theme="b"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex11" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-a">
+     		<a href="#" id="g5lex12" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex13" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex14" data-role="button" data-theme="b"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a href="#" id="g5lex15" data-role="button" data-theme="b"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex16" data-role="button" data-theme="b"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex17" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-a">
+     		<a href="#" id="g5lex18" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex19" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex20" data-role="button" data-theme="b"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a href="#" id="g5lex21" data-role="button" data-theme="b"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex22" data-role="button" data-theme="b"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a href="#" id="g5lex23" data-role="button" data-theme="b"></a>
+     	</div>
+     	<div class="ui-block-a">
+      		<a href="#" id="g5lex24" data-role="button" data-theme="b"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a href="#" id="g5lex25" data-role="button" data-theme="b"></a>
+    	</div>
+     	
    </div>
     	
     
