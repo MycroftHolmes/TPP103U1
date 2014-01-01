@@ -75,6 +75,9 @@ a:active {
 	var g4highscore = 0;
 	var g4counter = 0;
 	var picnumb = 0;
+	var g5score = 0;
+	var g5highscore = 0;
+	var g5fair = 0;
 
 var Hint = new Array ();
 	Hint [0] = "The fireman <em> rescued</em> the man from the fire."; //Rescue1
@@ -866,6 +869,1042 @@ function randPic()
 	picnumb = Math.floor((Math.random() * newWord.length));
 	
 	document.getElementById("g5pic").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
+	
+	g5fair = 0;
+	
+	g5score = 0;
+	
+	document.getElementById("g5score").innerHTML = g5score;
+	
+
+	}
+	
+</script>
+
+<script>
+
+function randPic2()
+	{
+
+	picnumb = Math.floor((Math.random() * newWord.length));
+	
+	document.getElementById("g5pic").innerHTML = '<img src ="'+ picnumb +'.jpg" alt="picchange" height="175" align="middle">';
+	
+	g5fair = 0;
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex0()
+	{
+
+	var a = 0;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex1()
+	{
+
+	var a = 1;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex2()
+	{
+
+	var a = 2;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex3()
+	{
+
+	var a = 3;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex4()
+	{
+
+	var a = 4;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex5()
+	{
+
+	var a = 5;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex6()
+	{
+
+	var a = 6;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex7()
+	{
+
+	var a = 7;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex8()
+	{
+
+	var a = 8;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex9()
+	{
+
+	var a = 9;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex10()
+	{
+
+	var a = 10;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex11()
+	{
+
+	var a = 11;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex12()
+	{
+
+	var a = 12;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex13()
+	{
+
+	var a = 13;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex14()
+	{
+
+	var a = 14;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex15()
+	{
+
+	var a = 15;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex16()
+	{
+
+	var a = 16;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex17()
+	{
+
+	var a = 17;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex18()
+	{
+
+	var a = 18;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex19()
+	{
+
+	var a = 19;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex20()
+	{
+
+	var a = 20;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex21()
+	{
+
+	var a = 21;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex22()
+	{
+
+	var a = 22;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex23()
+	{
+
+	var a = 23;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex24()
+	{
+
+	var a = 24;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
+
+	}
+	
+</script>
+
+<script>
+
+function g5lex25()
+	{
+
+	var a = 25;
+	
+	if (a == picnumb && g5fair == 0) {
+	
+		document.getElementById("g5score").innerHTML = g5score + 5;
+		g5score = g5score + 5;
+		g5fair++;
+		
+			if (g5score > g5highscore) {
+			
+				g5highscore = g5score;
+				document.getElementById("highscoreg5").innerHTML = g5highscore;
+			}
+	
+	}
+	
+	else if (a == picnumb && g5fair == 1) {
+	
+		g5score = g5score;
+		
+		}
+	
+	
+	else {
+	
+		document.getElementById("g5score").innerHTML = g5score - 1;
+		g5score = g5score - 1;
+	
+		}
 
 	}
 	
@@ -3225,14 +4264,14 @@ function randPic()
 
 <div id="page60" data-role="page" data-theme="a">
 <div data-role="header">
-    <h1>High Score:&nbsp;<span id"highscoreg5">0</span></h1>
+    <h1>High Score:&nbsp;<span id="highscoreg5">0</span></h1>
   </div>
 <div data-role="content">    
     	<div>
           <div align="center">
             <table width="125" border="1" cellpadding="0"
               <tr>
-                <th height="45" bgcolor="#FFFFFF" id="G5score" style="font-size: xx-large; color: #000;" scope="col">0</th>
+                <th height="45" bgcolor="#FFFFFF" id="g5score" style="font-size: xx-large; color: #000;" scope="col">0</th>
               </tr>
             </table>
           </div>
@@ -3240,7 +4279,7 @@ function randPic()
          
     <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
-    	     <button onClick="randPic()" data-theme="b" data-inline=true>new picture</button>
+    	     <button onClick="randPic2()" data-theme="b" data-inline=true>new picture</button>
     	     <table width="225" height="65" border="0" cellpadding="0" data-inline=true>
     	       <tr>
     	         <th width="225" bgcolor="#FFFFFF" id="g5pic" style="font-size: xx-large; color: #000;" scope="col"></th>
@@ -3251,82 +4290,82 @@ function randPic()
     
     <div class="ui-grid-b" data-role="controlgroup">
      	<div class="ui-block-a">
-     		<a href="#" id="g5lex0" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex0()" id="g5lex0" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex1" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex1()" id="g5lex1" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex2" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex2()" id="g5lex2" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-a">
-      		<a href="#" id="g5lex3" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex3()" id="g5lex3" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex4" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex4()" id="g5lex4" data-role="button" data-theme="b"></a>
     	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex5" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex5()" id="g5lex5" data-role="button" data-theme="b"></a>
      	</div>	
      	<div class="ui-block-a">
-     		<a href="#" id="g5lex6" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex6()" id="g5lex6" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex7" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex7()" id="g5lex7" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex8" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex8()" id="g5lex8" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-a">
-      		<a href="#" id="g5lex9" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex9()" id="g5lex9" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex10" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex10()" id="g5lex10" data-role="button" data-theme="b"></a>
     	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex11" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex11()" id="g5lex11" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-     		<a href="#" id="g5lex12" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex12()" id="g5lex12" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex13" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex13()" id="g5lex13" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex14" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex14()" id="g5lex14" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-a">
-      		<a href="#" id="g5lex15" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex15()" id="g5lex15" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex16" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex16()" id="g5lex16" data-role="button" data-theme="b"></a>
     	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex17" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex17()" id="g5lex17" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-     		<a href="#" id="g5lex18" data-role="button" data-theme="b"></a>
+     		<a href="#" onClick="g5lex18()" id="g5lex18" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex19" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex19()" id="g5lex19" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex20" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex20()" id="g5lex20" data-role="button" data-theme="b"></a>
      	</div>
       	<div class="ui-block-a">
-      		<a href="#" id="g5lex21" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex21()" id="g5lex21" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex22" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex22()"id="g5lex22" data-role="button" data-theme="b"></a>
     	</div>
      	<div class="ui-block-c">
-       		<a href="#" id="g5lex23" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex23()" id="g5lex23" data-role="button" data-theme="b"></a>
      	</div>
      	<div class="ui-block-a">
-      		<a href="#" id="g5lex24" data-role="button" data-theme="b"></a>
+      		<a href="#" onClick="g5lex24()"id="g5lex24" data-role="button" data-theme="b"></a>
     	 </div>
      	<div class="ui-block-b">
-       		<a href="#" id="g5lex25" data-role="button" data-theme="b"></a>
+       		<a href="#" onClick="g5lex25()" id="g5lex25" data-role="button" data-theme="b"></a>
     	</div>
      	
    </div>
