@@ -7,8 +7,7 @@
 }
 
 #page60 {
-	background: url('metal.png') no-repeat;
-	background-size: 100%;	
+	background: url('metal.png')
 }
 
 .highscore {
@@ -31,7 +30,6 @@
 
 #g5pic {
 
-	box-shadow: 10px 10px 5px #888888;
-	opacity:0.9;
+	box-shadow: 5px 5px 2px #000000;
 
 }
