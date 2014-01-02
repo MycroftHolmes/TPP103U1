@@ -6,9 +6,6 @@
 	background: url('letters.png')	
 }
 
-#page60 {
-	background: url('metal.png')
-}
 
 .highscore {
 
@@ -20,9 +17,9 @@
 	color: white;
 }
 
-  
 #g5score {
   background-color:#000000;
+  color:#FFFFFF;
   border:1px solid blue;
   opacity:0.5;
 
@@ -30,6 +27,6 @@
 
 #g5pic {
 
-	box-shadow: 5px 5px 2px #000000;
+	box-shadow: 5px 5px 10px #000000;
 
 }
