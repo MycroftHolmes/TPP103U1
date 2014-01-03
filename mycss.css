@@ -3,13 +3,16 @@
 }
 
 #page58 {
-	background: url('letters.png')	
+	background: url('letters.jpg')	
 }
 
+#page60 {
+	background: url('metal.jpg')	
+}
 
 .highscore {
 
-	color: black;
+	color: white;
 }
 
 .highscore2 {
@@ -30,3 +33,4 @@
 	box-shadow: 5px 5px 10px #000000;
 
 }
+

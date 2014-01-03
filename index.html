@@ -787,6 +787,7 @@ function vowelless()
 	w = w.replace(/u/g," _ ");
 	w = w.replace(/y/g," _ ");
 	document.getElementById("novowels").innerHTML = w;
+	g4counter=0;
 	
 	}
 	
@@ -804,7 +805,7 @@ function vowelhelp()
     $(this).html($(this).html().replace(/(a|e|i|o|u|y)/g, '<span class="vowel">$1</span>'));	
 });
 	$('#vowelled').show();
-	$('#vowelled').hide(3000);
+	$('#vowelled').hide(1500);
 	g4counter++;
 
 	}
@@ -822,6 +823,7 @@ if (a == newWord[vowelword] && g4counter == 0) {
 	
 	document.getElementById("G4score").innerHTML = g4score + 10;
 	g4score = g4score + 10;
+	g4counter = 100;
 		if (g4score > g4highscore) {
 		
 			g4highscore = g4score;
@@ -835,6 +837,7 @@ else if (a == newWord[vowelword] && g4counter == 1) {
 	
 	document.getElementById("G4score").innerHTML = g4score + 5;
 	g4score = g4score + 5;
+	g4counter = 100;
 		if (g4score > g4highscore) {
 		
 			g4highscore = g4score;
@@ -848,6 +851,21 @@ else if (a == newWord[vowelword] && g4counter == 2) {
 	
 	document.getElementById("G4score").innerHTML = g4score + 3;
 	g4score = g4score + 3;
+	g4counter = 100;
+		if (g4score > g4highscore) {
+		
+			g4highscore = g4score;
+			document.getElementById("hiscoreg4").innerHTML = g4highscore;
+			
+		}	
+	
+}
+
+else if (a == newWord[vowelword] && g4counter == 3) {
+	
+	document.getElementById("G4score").innerHTML = g4score + 1;
+	g4score = g4score + 1;
+	g4counter = 100;
 		if (g4score > g4highscore) {
 		
 			g4highscore = g4score;
@@ -3902,7 +3920,7 @@ function g5lex25()
         <li class="listdivider" data-role="divider" data-theme="d">One-Player Games</li>
        <li><a href="#page55">Scrambler</a></li>
        <li><a href="#page57">Vowel Trouble</a></li>
-       <li><a href="#page59">PictureMatch</a></li>
+       <li><a href="#page59">Match-It!</a></li>
    	</ul>
   </div>
   <div data-role="footer" class="ui-bar" data-position="fixed">
@@ -4214,14 +4232,14 @@ function g5lex25()
     </p>
    	<p align="justify">&bull;&nbsp;&nbsp;Vowel Trouble is a one-player game.<br/><br/>
       &bull;&nbsp;&nbsp;The vowels of each word are missing.<br/><br/>
-      &bull;&nbsp;&nbsp;You must spell the word correctly<br/><br/>
+      &bull;&nbsp;&nbsp;Spell the word and press 'Enter'<br/><br/>
       &bull;&nbsp;&nbsp;You receive 10 points if you spell the word correctly without help.<br/>      <br/>
-      &bull;&nbsp;&nbsp; If you need help, touch the help button to see the word for 3 seconds<br/><br/>
+      &bull;&nbsp;&nbsp; If you need help, touch the help button to see the word for a second.<br/><br/>
       &bull;&nbsp;&nbsp;<em>Remember:</em>&nbsp; You receive fewer points each time you get help.<br/><br/>
     </p>
-  	<ul data-role="listview" data-theme="b">
-	  <li><a href="#page58" onClick="randomStart();">Start Game</a></li>
-   	</ul>
+  
+	  <a href="#page58" onClick="randomStart();" data-role="button" data-inline="true" data-theme="b">Start Game</a></li>
+   
   </div>
   <div data-role="footer" class="ui-bar" data-position="fixed">
     <div class="ui-grid-b">
@@ -4242,20 +4260,12 @@ function g5lex25()
 
 <div id="page58" data-role="page" data-theme="a">
 <div data-role="header">
-    <h1>Vowel Trouble</h1>
+    <span class="highscore">High Score:&nbsp;<span id="hiscoreg4" class="highscore">0</span></span> <br/> 
   </div>
-<div data-role="content">
-		<div align="center">
-        	<span class="highscore">High Score</span>
-            <br/>
-            <span class="highscore"><span id="hiscoreg4" class="highscore">0</span></span> <br/> 
-        </div>     
+<div data-role="content">  
     	<div>
           <div align="center">
             <table width="150" border="1" cellpadding="0">
-              <tr>
-                <th width="150" bgcolor="#FFFFFF" style="font-size: xx-large; color: #000;" scope="col">Score</th>
-              </tr>
               <tr>
                 <th height="45" bgcolor="#FFFFFF" id="G4score" style="font-size: xx-large; color: #000;" scope="col">0</th>
               </tr>
@@ -4276,7 +4286,7 @@ function g5lex25()
     </div>
     
      <input id="game4input" data-type="search"></input>
-     <button onClick="G4scoring()" data-inline=true data-theme="b">Enter Word</button>
+     <button onClick="G4scoring()" data-inline=true data-theme="b">Enter</button>
     
        <div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
@@ -4309,18 +4319,18 @@ function g5lex25()
 
 <div data-role="page" id="page59" data-theme="d">
   <div data-role="header">
-    <h1>Picture Match</h1>
+    <h1>Match-It!</h1>
   </div>
   <div data-role="content">
     <p align="center">&nbsp;&nbsp;Rules:
     </p>
-   	<p align="justify">&bull;&nbsp;&nbsp;Picture Match is a one-player game.<br/><br/>
+   	<p align="justify">&bull;&nbsp;&nbsp;Match-It! is a one-player game.<br/><br/>
       &bull;&nbsp;&nbsp;Touch the word that goes with the picture.<br/><br/>
       &bull;&nbsp;&nbsp;You receive points for correct answers.<br/><br/>
       &bull;&nbsp;&nbsp;You lose points when you touch the wrong word.<br/>      <br/>
     </p>
   	<ul data-role="listview" data-theme="b">
-	  <li><a href="#page60" onClick="randPic();">Start Game</a></li>
+	  <a href="#page60" onClick="randPic();" data-role="button" data-theme="b" data-inline="true">Start Game</a>
    	</ul>
   </div>
   <div data-role="footer" class="ui-bar" data-position="fixed">
