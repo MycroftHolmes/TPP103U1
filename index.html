@@ -2006,6 +2006,50 @@ function g5lex25()
 	
 </script>
 
+<script>
+
+function g2hint1()
+	{
+	
+	document.getElementById("g2hint1").innerHTML = "success";
+	
+	}
+
+</script>
+
+<script>
+
+function g2hint2()
+	{
+	
+	document.getElementById("g2hint2").innerHTML = "hasn't";
+	
+	}
+
+</script>
+
+<script>
+
+function g2hint3()
+	{
+	
+	document.getElementById("g2hint3").innerHTML = "spoiled";
+	
+	}
+
+</script>
+
+<script>
+
+function g2hint4()
+	{
+	
+	document.getElementById("g2hint4").innerHTML = "me yet";
+	
+	}
+
+</script>
+
 </script>
 
 </head> 
@@ -3916,7 +3960,7 @@ function g5lex25()
   	<ul data-role="listview" data-theme="b">
     	<li class="listdivider" data-role="divider" data-theme="d">Multi-player Games</li>
   		<li><a href="#page51">Word Finder</a></li>
-    	<li><a href="#page53">Game 2</a></li>
+    	<li><a href="#page53">Password</a></li>
         <li class="listdivider" data-role="divider" data-theme="d">One-Player Games</li>
        <li><a href="#page55">Scrambler</a></li>
        <li><a href="#page57">Vowel Trouble</a></li>
@@ -4084,12 +4128,11 @@ function g5lex25()
 
 <div data-role="page" id="page53">
   <div data-role="header">
-    <h1>Game two</h1>
+    <h1>Password</h1>
   </div>
   <div data-role="content">
-    <p align="center">&nbsp;&nbsp;Word Finder Rules:
-    </p>
-   	<p align="justify">&bull;&nbsp;You have one word when the game begins.<br/><br/>
+    <p align="center">Rules:</p>
+   	<p align="justify">&bull;&nbsp;&nbsp;Password is for two players.<br/><br/>
       &bull;&nbsp;&nbsp;Add to your list by getting words from other students.<br/><br/>
       &bull;&nbsp;&nbsp;"May I have one of your words please?"<br/><br/>
       &bull;&nbsp;&nbsp;The other student <em>must</em> say one word. <br/><br/>
@@ -4097,26 +4140,75 @@ function g5lex25()
       &bull;&nbsp;&nbsp;Add the new word in the text box and touch <b>enter</b>.<br/><br/>
       &bull;&nbsp;&nbsp;The first person to enter all the words wins!!!<br/><br/>
     </p>
-  	<ul data-role="listview" data-theme="b">
-	  <li><a href="#page52" onClick="randomStart();">Start Game</a></li>
-   	</ul>
+	  <a href="#page54" onClick="randomStart();" data-inline="true" data-role="button" data-theme="b">Start Game</a>
   </div>
   <div data-role="footer" class="ui-bar" data-position="fixed">
-    <h4><a href="#page2">Main Menu</a></h4>
-  </div>
+     <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
 </div>
 
-<div data-role="page" id="page54">
+<div data-role="page" id="page54" data-theme="d">
   <div data-role="header">
-    <h1>Game two</h1>
+    <span>High Score:&nbsp;<span id="g2highscore">0</span></span>
   </div>
+  
   <div data-role="content">
-  	<ul data-role="listview" data-theme="b">
-	  <li><a href="#page52" onClick="randomStart();">Start Game</a></li>
-   	</ul>
+  	
+  	<div data-role="controlgroup" data-rel="horizontal">
+    	   <div align="center">
+    	     <button data-theme="d" data-inline=true>Player's Name</button>
+    	     <table class="g2trans" width="175" height="65" data-inline=true>
+    	        <tr>
+    	         <th width="45" id="g2score" style="font-size: x-large;" scope="col">0</th>
+   	           </tr>
+    	       <tr>
+    	         <th width="225" height="45" id="g2word" style="font-size: x-large;" scope="col">word</th>
+   	           </tr>
+    	       </table>
+  	       </div>
+    </div>
+    
+    <div data-role="controlgroup">
+      	<a onClick="g2hint1();" data-role="button" id="g2hint1" data-theme="a">Hint 1</a>
+        <a onClick="g2hint2();" data-role="button" id="g2hint2" data-theme="a">Hint 2</a>
+        <a onClick="g2hint3();" data-role="button" id="g2hint3" data-theme="a">Hint 3</a>
+        <a onClick="g2hint4();" data-role="button" id="g2hint4" data-theme="a">Hint 4</a>
+    </div>
+  	
   </div>
-  <div data-role="footer" class="ui-bar" data-position="fixed">
-    <h4><a href="#page2">Main Menu</a></h4>
+  
+  <div>
+  	<button data-theme="d" data-inline="true">Correct</button>
+  	<button data-theme="d" data-inline="true">Pass</button>
+  	
+  </div>
+  
+  
+   <div data-role="footer" class="ui-bar" data-position="fixed">
+     <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
   </div>
 </div>
 

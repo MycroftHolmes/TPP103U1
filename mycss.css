@@ -10,6 +10,10 @@
 	background: url('metal.jpg')	
 }
 
+#page54 {
+	background: url('metal.jpg')	
+}
+
 .highscore {
 
 	color: white;
@@ -31,6 +35,16 @@
 #g5pic {
 
 	box-shadow: 5px 5px 10px #000000;
+
+}
+
+.g2trans {
+
+  background-color:#0069AA;
+  color: white;
+  border:1px solid black;
+  opacity:0.8;
+  box-shadow: 5px 5px 10px #000000;
 
 }
 
