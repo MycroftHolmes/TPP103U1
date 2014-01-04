@@ -78,6 +78,11 @@ a:active {
 	var g5score = 0;
 	var g5highscore = 0;
 	var g5fair = 0;
+	var g2score = 0;
+	var g2highscore = 0;
+	var g2word = 0;
+	var g2name = "";
+	
 
 var Hint = new Array ();
 	Hint [0] = "The fireman <em> rescued</em> the man from the fire."; //Rescue1
@@ -229,6 +234,33 @@ function please()
 	document.getElementById("g5lex23").innerHTML = newWord[23];
 	document.getElementById("g5lex24").innerHTML = newWord[24];
 	document.getElementById("g5lex25").innerHTML = newWord[25];
+	
+	document.getElementById("g2lex0").innerHTML = newWord[0];
+	document.getElementById("g2lex1").innerHTML = newWord[1];
+	document.getElementById("g2lex2").innerHTML = newWord[2];
+	document.getElementById("g2lex3").innerHTML = newWord[3];
+	document.getElementById("g2lex4").innerHTML = newWord[4];
+	document.getElementById("g2lex5").innerHTML = newWord[5];
+	document.getElementById("g2lex6").innerHTML = newWord[6];
+	document.getElementById("g2lex7").innerHTML = newWord[7];
+	document.getElementById("g2lex8").innerHTML = newWord[8];
+	document.getElementById("g2lex9").innerHTML = newWord[9];
+	document.getElementById("g2lex10").innerHTML = newWord[10];
+	document.getElementById("g2lex11").innerHTML = newWord[11];
+	document.getElementById("g2lex12").innerHTML = newWord[12];
+	document.getElementById("g2lex13").innerHTML = newWord[13];
+	document.getElementById("g2lex14").innerHTML = newWord[14];
+	document.getElementById("g2lex15").innerHTML = newWord[15];
+	document.getElementById("g2lex16").innerHTML = newWord[16];
+	document.getElementById("g2lex17").innerHTML = newWord[17];
+	document.getElementById("g2lex18").innerHTML = newWord[18];
+	document.getElementById("g2lex19").innerHTML = newWord[19];
+	document.getElementById("g2lex20").innerHTML = newWord[20];
+	document.getElementById("g2lex21").innerHTML = newWord[21];
+	document.getElementById("g2lex22").innerHTML = newWord[22];
+	document.getElementById("g2lex23").innerHTML = newWord[23];
+	document.getElementById("g2lex24").innerHTML = newWord[24];
+	document.getElementById("g2lex25").innerHTML = newWord[25];
 	
 	document.getElementById("pos0").innerHTML = pos[0];
 	document.getElementById("pos1").innerHTML = pos[1];
@@ -2008,10 +2040,26 @@ function g5lex25()
 
 <script>
 
+function g2startstop()
+
+	{
+	
+	g2word = Math.floor((Math.random() * newWord.length));
+	document.getElementById("g2word").innerHTML = newWord[g2word];
+
+	
+	
+	}
+
+</script>
+
+
+<script>
+
 function g2hint1()
 	{
 	
-	document.getElementById("g2hint1").innerHTML = "success";
+	document.getElementById("g2hint1").innerHTML = def[g2word];
 	
 	}
 
@@ -2022,7 +2070,7 @@ function g2hint1()
 function g2hint2()
 	{
 	
-	document.getElementById("g2hint2").innerHTML = "hasn't";
+	document.getElementById("g2hint2").innerHTML = sent[g2word];
 	
 	}
 
@@ -2032,8 +2080,9 @@ function g2hint2()
 
 function g2hint3()
 	{
-	
-	document.getElementById("g2hint3").innerHTML = "spoiled";
+	var str = newWord[g2word];
+	var first = str.charAt(0);
+	document.getElementById("g2hint3").innerHTML = "It starts with the letter '" + first + "'.";
 	
 	}
 
@@ -2041,14 +2090,54 @@ function g2hint3()
 
 <script>
 
-function g2hint4()
+function g2name()
+
 	{
 	
-	document.getElementById("g2hint4").innerHTML = "me yet";
+	g2name = document.getElementById("g2input").value;
+	
+	document.getElementById("g2playername").innerHTML = g2name;
 	
 	}
 
 </script>
+
+<script>
+
+function g2correct()
+
+	{
+	
+	g2word = Math.floor((Math.random() * newWord.length));
+	document.getElementById("g2word").innerHTML = newWord[g2word];
+	document.getElementById("g2hint1").innerHTML = "Hint 1";
+	document.getElementById("g2hint2").innerHTML = "Hint 2";
+	document.getElementById("g2hint3").innerHTML = "Hint 3";
+	
+	document.getElementById("g2score").innerHTML = g2score + 1;
+	g2score++;
+
+	
+	}
+
+</script>
+
+<script>
+
+function g2pass()
+
+	{
+	
+	g2word = Math.floor((Math.random() * newWord.length));
+	document.getElementById("g2word").innerHTML = newWord[g2word];
+	document.getElementById("g2hint1").innerHTML = "Hint 1";
+	document.getElementById("g2hint2").innerHTML = "Hint 2";
+	document.getElementById("g2hint3").innerHTML = "Hint 3";
+	
+	}
+
+</script>
+
 
 </script>
 
@@ -4133,15 +4222,19 @@ function g2hint4()
   <div data-role="content">
     <p align="center">Rules:</p>
    	<p align="justify">&bull;&nbsp;&nbsp;Password is for two players.<br/><br/>
-      &bull;&nbsp;&nbsp;Add to your list by getting words from other students.<br/><br/>
-      &bull;&nbsp;&nbsp;"May I have one of your words please?"<br/><br/>
-      &bull;&nbsp;&nbsp;The other student <em>must</em> say one word. <br/><br/>
-      &bull;&nbsp;&nbsp;You may also ask for the spelling.<br/><br/>
-      &bull;&nbsp;&nbsp;Add the new word in the text box and touch <b>enter</b>.<br/><br/>
-      &bull;&nbsp;&nbsp;The first person to enter all the words wins!!!<br/><br/>
+      &bull;&nbsp;&nbsp;One player gives hints and the other guesses the word.<br/><br/>
+      &bull;&nbsp;&nbsp;Guess as many words as you can in one minute.<br/><br/>
+      &bull;&nbsp;&nbsp;Switch roles after each round.<br/><br/>
     </p>
-	  <a href="#page54" onClick="randomStart();" data-inline="true" data-role="button" data-theme="b">Start Game</a>
   </div>
+  
+  <div>
+     <input id="g2input" placeholder="Type your partner's name here and press 'Enter'"></input>
+     <button onClick="g2name()" data-inline=true data-theme="a">Enter</button>
+  </div>
+  
+  <a href="#page54" onClick="g2Start();" data-inline="true" data-role="button" data-theme="b">Start Game</a>
+  
   <div data-role="footer" class="ui-bar" data-position="fixed">
      <div class="ui-grid-b">
     	<div class="ui-block-a">
@@ -4167,33 +4260,144 @@ function g2hint4()
   	
   	<div data-role="controlgroup" data-rel="horizontal">
     	   <div align="center">
-    	     <button data-theme="d" data-inline=true>Player's Name</button>
+    	     <button data-theme="d" data-inline=true id="g2playername">Player's Name</button>
     	     <table class="g2trans" width="175" height="65" data-inline=true>
     	        <tr>
-    	         <th width="45" id="g2score" style="font-size: x-large;" scope="col">0</th>
+    	         <th width="45" id="g2score" style="font-size: xx-large;" scope="col">0</th>
    	           </tr>
     	       <tr>
-    	         <th width="225" height="45" id="g2word" style="font-size: x-large;" scope="col">word</th>
+    	         <th width="225" height="45" id="g2word" style="font-size: xx-large;" scope="col">word</th>
    	           </tr>
     	       </table>
   	       </div>
+    
+    </div>
+    
+    <div>
+  	<button onClick="g2correct();" data-theme="d" data-inline="true">Correct</button>
+  	<button onClick="g2pass();"data-theme="d" data-inline="true">Pass</button>
+  	<button onClick="g2startstop();"data-theme="d" data-inline="true">Start</button>
     </div>
     
     <div data-role="controlgroup">
       	<a onClick="g2hint1();" data-role="button" id="g2hint1" data-theme="a">Hint 1</a>
         <a onClick="g2hint2();" data-role="button" id="g2hint2" data-theme="a">Hint 2</a>
         <a onClick="g2hint3();" data-role="button" id="g2hint3" data-theme="a">Hint 3</a>
-        <a onClick="g2hint4();" data-role="button" id="g2hint4" data-theme="a">Hint 4</a>
     </div>
+    
+    <a href="#page54b" data-role="button" data-inline="true" data-theme="a">Switch to answer questions</a>
   	
   </div>
   
-  <div>
-  	<button data-theme="d" data-inline="true">Correct</button>
-  	<button data-theme="d" data-inline="true">Pass</button>
-  	
+   <div data-role="footer" class="ui-bar" data-position="fixed">
+     <div class="ui-grid-b">
+    	<div class="ui-block-a">
+        	<div align="center"><a href="#page50" data-icon="back" data-iconpos="left" data-inline="true" data-role="button" data-theme="b">Back</a>
+      	  </div>
+    	</div>
+        <div class="ui-block-b">
+        	<div align="center"><a href="#page" data-icon="home" data-iconpos="notext" data-role="button" data-theme="b"></a>
+      	  </div>
+        </div>
+          <div class="ui-grid-c">
+      	  </div>
+        </div>
+	</div>
+  </div>
+</div>
+
+<div data-role="page" id="page54b" data-theme="d">
+  <div data-role="header">
+    <span>Guessing the word</span>
   </div>
   
+  <div data-role="content">
+    
+   <a href="#page54" data-role="button" data-inline="true" data-theme="a">Switch to ask questions</a>
+    
+     <div class="ui-grid-b" data-role="controlgroup">
+     	<div class="ui-block-a">
+     		<a id="g2lex0" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a id="g2lex1" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex2" data-role="button" data-theme="d"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a id="g2lex3" data-role="button" data-theme="d"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a id="g2lex4" data-role="button" data-theme="d"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex5" data-role="button" data-theme="d"></a>
+     	</div>	
+     	<div class="ui-block-a">
+     		<a id="g2lex6" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a id="g2lex7" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex8" data-role="button" data-theme="d"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a id="g2lex9" data-role="button" data-theme="d"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a id="g2lex10" data-role="button" data-theme="d"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex11" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-a">
+     		<a id="g2lex12" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a id="g2lex13" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex14" data-role="button" data-theme="d"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a id="g2lex15" data-role="button" data-theme="d"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a id="g2lex16" data-role="button" data-theme="d"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex17" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-a">
+     		<a id="g2lex18" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-b">
+       		<a id="g2lex19" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex20" data-role="button" data-theme="d"></a>
+     	</div>
+      	<div class="ui-block-a">
+      		<a id="g2lex21" data-role="button" data-theme="d"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a id="g2lex22" data-role="button" data-theme="d"></a>
+    	</div>
+     	<div class="ui-block-c">
+       		<a id="g2lex23" data-role="button" data-theme="d"></a>
+     	</div>
+     	<div class="ui-block-a">
+      		<a id="g2lex24" data-role="button" data-theme="d"></a>
+    	 </div>
+     	<div class="ui-block-b">
+       		<a id="g2lex25" data-role="button" data-theme="d"></a>
+    	</div>
+     	
+   </div>
+  	
+  </div>
   
    <div data-role="footer" class="ui-bar" data-position="fixed">
      <div class="ui-grid-b">
