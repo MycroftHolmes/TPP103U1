@@ -42,6 +42,12 @@
 
 }
 
+#g2pic {
+
+	box-shadow: 5px 5px 10px #000000;
+
+}
+
 .g2trans {
 
   background-color:#0069AA;
