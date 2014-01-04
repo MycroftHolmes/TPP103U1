@@ -2128,6 +2128,9 @@ function g2pass()
 
 	{
 	
+	var clicksound = new Audio('rope.mp3');
+	clicksound.play();
+	
 	g2word = Math.floor((Math.random() * newWord.length));
 	document.getElementById("g2word").innerHTML = newWord[g2word];
 	document.getElementById("g2hint1").innerHTML = "Hint 1";
@@ -4490,9 +4493,9 @@ function g2pic25()
     </div>
     
     <div data-role="controlgroup">
-      	<a onClick="g2hint1();" data-role="button" id="g2hint1" class="ui-bar" data-theme="a">Hint 1</a>
-        <a onClick="g2hint2();" data-role="button" id="g2hint2" data-theme="a">Hint 2</a>
-        <a onClick="g2hint3();" data-role="button" id="g2hint3" data-theme="a">Hint 3</a>
+      	<a onClick="g2hint1();" class="largebuttons" data-role="button" id="g2hint1" data-theme="a">Hint 1</a>
+        <a onClick="g2hint2();" class="largebuttons" data-role="button" id="g2hint2" data-theme="a">Hint 2</a>
+        <a onClick="g2hint3();" class="largebuttons" data-role="button" id="g2hint3" data-theme="a">Hint 3</a>
     </div>
     
     <a href="#page54b" data-role="button" data-inline="true" data-theme="a">Switch to answer questions</a>
