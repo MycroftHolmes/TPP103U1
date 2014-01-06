@@ -58,6 +58,10 @@
 
 }
 
-.largebuttons { height: 38px; font-size: 18px;}
-.largebuttons .ui-btn-inner {padding-top: 14px}
+.largebuttons { 
+
+ height: 38px; font-size: 16px;
+ 
+ }
+
 

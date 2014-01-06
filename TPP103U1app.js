@@ -55,7 +55,7 @@ var pos = new Array ();
 	def [25] = "a place where you can see wild animals.";
 	
 	var xtra = new Array ();
-	xtra [0] = "Rescue can also be used as an adjective: 'I'm part of the rescue team.' It can even be a noun: 'Are you going to help with the rescue?'";
+	xtra [0] = "Apples are used to make pies and juice.";
 	xtra [1] = "Related words: Bedclothes (pyjamas), pillows, blankets, sheets";
 	xtra [2] = "Cats catch mice.";
 	xtra [3] = "Related word: doorknob (a handle for opening and closing a door).";
