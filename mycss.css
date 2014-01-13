@@ -1,5 +1,5 @@
 #page56 {
-	background: url('scramback.png')	
+	background: url('ransom2.jpg')	
 }
 
 #page58 {
@@ -28,13 +28,6 @@
 	color: white;
 }
 
-#g5score {
-  background-color:#000000;
-  color:#FFFFFF;
-  border:1px solid blue;
-  opacity:0.5;
-
-}
 
 #g5pic {
 
@@ -63,5 +56,67 @@
  height: 38px; font-size: 16px;
  
  }
+ 
+ .g2listen {
+	 
+	font-size:10px;	 
+	 
+ }
+ 
+ .pic {
+ 	
+	box-shadow: 5px 5px 10px #000000;
+    width: 150px;
+    height: auto;
+}
 
+.vowel {
+	color: red;	
+}
+
+body {
+	background-color: #FFF;
+	font-weight: bold;
+	font-size: large;
+	text-align: center;
+	background-image: url();
+}
+
+div.menu {
+	background-color: #FFF;
+	font-weight: bold;
+	font-color: #0069AA;
+	font-size: x-large;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.course {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	color: #006647;
+}
+
+#imagematch1 {
+
+height: auto;
+width: 175px;
+align: middle;
+}
 
